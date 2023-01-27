@@ -29,6 +29,7 @@ public class Main {
         System.out.println(student2.getName() + " is a local student");
         System.out.println(teacher1.getName() + " is a full-time teacher with a salary of $" + teacher1.getSalary());
         System.out.println(teacher2.getName() + " is a part-time teacher with an hourly rate of $" + teacher2.getHourlyRates());
+        System.out.println(student3.getName() + " studies " + student3.getProgramName() + " and his postal code is " + address1.getPostalCode());
     }
 
 }
