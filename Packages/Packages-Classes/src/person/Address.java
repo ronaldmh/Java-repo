@@ -1,7 +1,5 @@
 package person;
-
-// 1 - Class Address
-public class Address {
+public class Address extends Person {
 
     //Variables
     private String address;
@@ -10,9 +8,12 @@ public class Address {
     private String province;
     private String country;
 
+    //Default Constructor
+    public Address() {};
 
-    // 2 - Full Constructor
-    public Address(String address, String postalCode, String city, String province, String country) {
+    //2-Full Constructor
+    public Address(String name, int age, int identification, String address, String postalCode, String city, String province, String country) {
+        super(name, age, identification);
         this.address = address;
         this.postalCode = postalCode;
         this.city = city;
@@ -20,7 +21,7 @@ public class Address {
         this.country = country;
     }
 
-    // 3 - Getter and Setter
+    //3-Getter and Setter
     public String getAddress() {
         return address;
     }
@@ -60,8 +61,4 @@ public class Address {
     public void setCountry(String country) {
         this.country = country;
     }
-
-
-
-
 }

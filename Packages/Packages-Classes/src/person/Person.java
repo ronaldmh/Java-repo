@@ -6,14 +6,18 @@ public class Person {
     private int age;
     private int identification;
 
-    // 2 - Full Constructor
+
+    //2-Full Constructor
     public Person(String name, int age, int identification) {
         this.name = name;
         this.age = age;
         this.identification = identification;
     }
 
-    // 3 - Getter and Setter
+    //3-Default Constructor
+    public Person(){};
+
+    //4-Getter and Setter
     public String getName() {
         return name;
     }

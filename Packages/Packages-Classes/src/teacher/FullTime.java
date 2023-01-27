@@ -2,25 +2,25 @@ package teacher;
 import person.Person;
 
 public class FullTime extends Person{
-    private int courseNumber;
+    private int numberOfCourses;
     private double Salary;
-    private int yearExperience;
+    private int yearOfExperience;
 
     // 2-Constructor
     public FullTime(String name, int age, int identification, int courseNumber, double salary, int yearExperience) {
         super(name, age, identification);
-        this.courseNumber = courseNumber;
+        this.numberOfCourses = courseNumber;
         Salary = salary;
-        this.yearExperience = yearExperience;
+        this.yearOfExperience = yearExperience;
     }
 
     // 3-Getter and Setter
-    public int getCourseNumber() {
-        return courseNumber;
+    public int getNumberOfCourses() {
+        return numberOfCourses;
     }
 
-    public void setCourseNumber(int courseNumber) {
-        this.courseNumber = courseNumber;
+    public void setNumberOfCourses(int numberOfCourses) {
+        this.numberOfCourses = numberOfCourses;
     }
 
     public double getSalary() {
@@ -31,12 +31,12 @@ public class FullTime extends Person{
         Salary = salary;
     }
 
-    public int getYearExperience() {
-        return yearExperience;
+    public int getYearOfExperience() {
+        return yearOfExperience;
     }
 
-    public void setYearExperience(int yearExperience) {
-        this.yearExperience = yearExperience;
+    public void setYearOfExperience(int yearOfExperience) {
+        this.yearOfExperience = yearOfExperience;
     }
 
 
